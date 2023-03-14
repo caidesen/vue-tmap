@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { defineComponent, inject, Ref, toRaw } from 'vue';
+import { defineComponent, inject, Ref, toRaw } from 'vue-demi';
 
 export default defineComponent({
   name: 'tmap-geometry-editor',

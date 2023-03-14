@@ -6,7 +6,7 @@ import {
   PropType,
   toRaw,
   onUnmounted,
-} from 'vue';
+} from 'vue-demi';
 import useCleanUp from '../composables/use-clean-up';
 
 const getLatLng = (latlngData: TMap.LatLngData) => {

@@ -6,7 +6,7 @@ import {
   PropType,
   toRaw,
   onUnmounted,
-} from 'vue';
+} from 'vue-demi';
 import useEvent from '../composables/use-event';
 import useCleanUp from '../composables/use-clean-up';
 

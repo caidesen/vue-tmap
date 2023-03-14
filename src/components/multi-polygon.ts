@@ -7,7 +7,7 @@ import {
   toRaw,
   provide,
   onUnmounted,
-} from 'vue';
+} from 'vue-demi';
 import useEvent from '../composables/use-event';
 import useCleanUp from '../composables/use-clean-up';
 import keyBy from '../utils/keyBy';

@@ -7,7 +7,9 @@ import {
   h,
   PropType,
   watch,
-} from 'vue';
+  isVue3,
+} from 'vue-demi';
+import type { Slots } from 'vue';
 import loadSDK from '../utils/loadSDK';
 
 type ControlConfig = { position: string; className: string };
@@ -280,6 +282,9 @@ export default defineComponent({
     };
   },
   render() {
+    const slot = isVue3
+      ? this.$slots
+      : (this as typeof this & { $scopedSlots: Slots }).$scopedSlots;
     return h(
       'div',
       {
@@ -287,7 +292,7 @@ export default defineComponent({
         style: { ...this.style, height: '100%', width: '100%' },
         ref: 'el',
       },
-      this.$slots.default && this.map ? this.$slots.default() : [],
+      slot.default && this.map ? slot.default() : [],
     );
   },
 });

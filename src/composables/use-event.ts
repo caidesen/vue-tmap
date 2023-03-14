@@ -1,4 +1,4 @@
-import { onUnmounted } from 'vue';
+import { onUnmounted } from 'vue-demi';
 
 export default function useEvent(
   overlay: TMap.GeometryOverlay,

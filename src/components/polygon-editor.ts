@@ -6,7 +6,7 @@ import {
   Ref,
   toRaw,
   watch,
-} from 'vue';
+} from 'vue-demi';
 import useCleanUp from '../composables/use-clean-up';
 import { builtStyle, buildGeometries } from './multi-polygon';
 

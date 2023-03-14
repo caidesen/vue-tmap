@@ -1,4 +1,3 @@
-import useEvent from '../composables/use-event';
 import {
   defineComponent,
   inject,
@@ -7,7 +6,8 @@ import {
   Ref,
   toRaw,
   watch,
-} from 'vue';
+} from 'vue-demi';
+import useEvent from '../composables/use-event';
 import useCleanUp from '../composables/use-clean-up';
 
 function builtStyle(opt: { [key: string]: TMap.MarkerStyleOptions }) {

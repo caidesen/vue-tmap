@@ -10,7 +10,7 @@ import {
   computed,
   onUnmounted,
   toRaw,
-} from 'vue';
+} from 'vue-demi';
 import useCleanUp from '../composables/use-clean-up';
 
 const getLatLng = (latlngData: TMap.LatLngData) => {
@@ -107,6 +107,7 @@ export default defineComponent({
     watch(
       () => props.position,
       () => {
+        if (domIns)
         domIns.updateDOM();
       },
     );

@@ -1,4 +1,4 @@
-import { defineComponent, inject, Ref, watch, PropType, toRaw } from 'vue';
+import { defineComponent, inject, Ref, watch, PropType, toRaw } from 'vue-demi';
 import { buildGeometries } from './multi-marker';
 
 export default defineComponent({
